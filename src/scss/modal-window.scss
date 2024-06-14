@@ -1,0 +1,181 @@
+.modal {
+    width: 500px;
+    padding: 24px;
+    background-color: #F0F4FC;
+    
+    .modal-wrapper {
+    
+        .modal-btn__wrapper {
+            display: flex;
+            justify-content: flex-end; 
+            margin-bottom: 4px;
+        
+            .modal-close__btn {
+                width: 52px;
+                height: 52px;
+                border: none;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #FFFFFF;
+                cursor: pointer;
+                transition: 0.3s;
+
+                &:hover {
+                    background-color: #c1c1c1;
+                }
+            }
+        }
+        .modal-signIn__wrapper {
+        
+            .modal-title {
+                margin-bottom: 18px;
+
+                p {
+                    font-size: 24px;
+                    font-weight: 500;
+                    color: #323232;
+                }
+            }
+            .modal-input__wrapper {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 36px;
+            
+                .modal-input__email {
+                    background-color: #D7E2F6;
+                    height: 73px;
+                    border: none;
+                    border-radius: 10px;
+                    outline: none;
+                    margin-bottom: 4px;
+                    padding-left: 24px; 
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #1F4284;
+                    
+                    &::placeholder {
+                        color: #1F4284;
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+                }
+                .modal-input__password {
+                    background-color: #D7E2F6;
+                    height: 73px;
+                    border: none;
+                    border-radius: 10px;
+                    outline: none;
+                    margin-bottom: 24px;
+                    padding-left: 24px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #1F4284;
+                    
+                    &::placeholder {
+                        color: #1F4284;
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+                }
+                .modal-remember__wrapper {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 24px;
+                    
+                    .container {
+                        display: block;
+                        position: relative;
+                        margin-right: 17px;
+                        cursor: pointer;
+                        font-size: 22px;
+                        -webkit-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+                        width: 18px;
+                        height: 18px;
+                        border: 2px solid #323232;
+                      }
+                      
+                      .container input {
+                        position: absolute;
+                        opacity: 0;
+                        cursor: pointer;
+                        height: 0;
+                        width: 0;
+                      }
+                      
+                      .checkmark {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+
+                        img {
+                            display: none;
+                            width: 15px;
+                        }
+                      }
+                      
+                      .container input:checked ~ .checkmark img {
+                        display: block;
+                      }
+
+                      p {
+                        font-size: 18px;
+                        color: #323232;
+                      }
+                }
+                .modal-recover__password {
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #244C98;                    
+                }
+            }
+
+            .modal-auth__wrapper {
+                display: flex;
+                flex-direction: column;
+
+                .modal-signIn {
+                    display: block;
+                    width: 100%;
+                    background-color: #244C98;
+                    height: 73px;
+                    border: none;
+                    border-radius: 10px;
+                    outline: none;
+                    margin-bottom: 4px;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #FFFFFF;
+
+                    &:hover {
+                        background-color: #1c3a72;
+                    }
+                }
+                .modal-signUp {
+                    display: block;
+                    background-color: #D7E2F6;
+                    height: 73px;
+                    border: 1px solid #244C98;
+                    border-radius: 10px;
+                    outline: none;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #244C98;
+
+                    &:hover {
+                        background-color: #1c3a72;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+}
